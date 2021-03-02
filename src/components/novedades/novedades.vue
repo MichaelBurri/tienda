@@ -1,7 +1,9 @@
 <template>
+<div>
+  <h1>NOVEDADES</h1>
   <div class="novedades">
-    <h1>NOVEDADES</h1>
-    <div v-for="novedad in novedades" v-bind:key="novedad.nombre+novedad.createdAt">
+    
+    <div v-for="novedad in novedades" v-bind:key="novedad.nombre+novedad.createdAt" class="novedad">
       <h3>{{novedad.nombre}}<br></h3>
       <img height="150" width="130" :src=novedad.imagen alt="">
       <br>
@@ -10,6 +12,8 @@
       Stock:{{novedad.stock}}<hr>
     </div>
   </div>
+</div>
+  
 </template>
 
 <script>
@@ -33,4 +37,6 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+@import "./styles/main.scss";
+</style>

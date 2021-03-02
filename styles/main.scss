@@ -1,0 +1,53 @@
+@import "_mixins.scss";
+
+.main{
+    font-family: 'Nunito', sans-serif;
+    background-color:$color3;
+}
+.productos, .novedades{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.producto{
+    width:20rem;
+    height:20rem;
+    border: 3px $color1 solid;
+    margin:10px;
+    border-radius:20px;
+    h3, p{
+        text-align: center;
+       
+    }
+    h3{
+        font-family: 'Rajdhani', sans-serif;
+    }
+    img{
+        display: block;
+        margin:auto;
+        border: 5px $color2 solid;
+        border-radius:30px;
+        padding:4px;
+    }
+    
+}
+.novedad{
+    background-color:$color3;
+    margin: 10px;;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size: 1.3rem;
+    h3{
+        font-family: 'Rajdhani', sans-serif;
+    }
+}
+.novedades{
+    border:4px $color1 solid;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:50px;
+    border-radius:20px;
+}

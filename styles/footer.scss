@@ -1,0 +1,30 @@
+@import "_mixins.scss";
+
+.icon{
+    color:$color2;
+    font-size: 2rem;
+    margin-right:10px;
+    margin-left:10px;
+    margin-top:5px;
+    margin-bottom:5px;
+    &:hover{
+        color: $color1;
+    }
+}
+p {
+    font-family: 'Rajdhani', sans-serif;
+}
+h3 {
+    margin: 40px 0 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a {
+    color: #42b983;
+  }

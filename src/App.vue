@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="main">
     <cabecera/>
     <br>
     <hr>
@@ -24,12 +24,15 @@ export default {
     pie,    
     cabecera,
     novedades,
-    productos
+    productos 
   }
 }
 </script>
 
-<style>
+
+<style lang="scss" >
+@import "./styles/main.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

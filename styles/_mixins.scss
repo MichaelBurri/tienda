@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rajdhani:wght@500&display=swap');
+
+
+$color1:#fa071b;
+$color2:#5e8f4fd8;
+$color3:#e5eff0;
+$color4:#f5e7ec7c;
+body{
+    background-color:$color2;
+    margin:10px;
+    padding:10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+@mixin response($breakpoint){
+    @if($breakpoint==xl){
+        @media(max-width:1200px){
+            @content
+        }
+    };
+    @if($breakpoint==lg){
+        @media(max-width:992px){
+            @content
+        }
+    };
+    @if($breakpoint==md){
+        @media(max-width:768px){
+            @content
+        }
+    };
+    @if($breakpoint==sm){
+        @media(max-width:576px){
+            @content
+        }
+    }
+}

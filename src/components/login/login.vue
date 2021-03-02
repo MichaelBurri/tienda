@@ -1,6 +1,6 @@
 <template>
-
-  <div class="login">
+  <div >
+    <div class="login">
     
     <div class="login-data">    
       <h2> Login</h2>
@@ -18,7 +18,9 @@
       <button v-on:click="crearEmail" @click="show">Registrarse</button>
     </div>
       
-    <div v-if="autenticado">
+    
+  </div>
+  <div v-if="autenticado" class="login-data">
       
       <button @click="logout">Logout</button>
       <h1>Bienvenido</h1>      
@@ -26,6 +28,7 @@
 
     </div>
   </div>
+  
 </template>
 
 <script lang="js">
@@ -92,17 +95,6 @@ import Firebase from '../../db.js';
 
 </script>
 
-<style scoped >
-.login{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-}
-.login-data{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 50px;
-}
+<style scoped lang="scss">
+@import "./styles/login.scss";
 </style>
